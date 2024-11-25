@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        #chat {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 15px;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 14px;
+        }
+
+        p {
+            color: rgb(148, 141, 141);
+            font-size: 10px;
+        }
+
+        .person {
+            display: flex;
+            align-items: center;
+        }
+
+        .name {
+            flex: 0 0 63%;
+        }
+
+        .name-left {
+            text-align: end;
+        }
+
+        .message {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-radius: 20px;
+        }
+
+        .msg-left {
+            background-color: rgb(238, 151, 166);
+            border-bottom-left-radius: 0px;
+        }
+
+        .msg-right {
+            background-color: rgb(158, 209, 226);
+            border-bottom-right-radius: 0px;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <div id="chat">
+        <div class="person">
+            <div class="name name-left">
+                <h1>Anie Smith</h1>
+                <p>4 hours ago</p>
+            </div>
+            <img src="avatar_2.png" alt="">
+        </div>
+        <div class="message msg-left">Привет! Как дела? У тебя всё хорошо?</div>
+        <div></div>
+        <div></div>
+        <div class="message msg-right">Привет, Ани! Всё отлично, а у тебя как?</div>
+        <div class="person">
+            <img src="avatar_1.png" alt="">
+            <div class="name">
+                <h1>Jack Silverston</h1>
+                <p>4 hours ago</p>
+            </div>
+        </div>
+        <div class="person">
+            <div class="name name-left">
+                <h1>Anie Smith</h1>
+                <p>4 hours ago</p>
+            </div>
+            <img src="avatar_2.png" alt="">
+        </div>
+        <div class="message msg-left">Тоже всё отлично. Я думала, может, встретимся на выходных?</div>
+        <div></div>
+        <div></div>
+        <div class="message msg-right">Хорошая идея! Куда бы ты хотела сходить?</div>
+        <div class="person">
+            <img src="avatar_1.png" alt="">
+            <div class="name">
+                <h1>Jack Silverston</h1>
+                <p>3 hours ago</p>
+            </div>
+        </div>
+        <div class="person">
+            <div class="name name-left">
+                <h1>Anie Smith</h1>
+                <p>3 hours ago</p>
+            </div>
+            <img src="avatar_2.png" alt="">
+        </div>
+        <div class="message msg-left">Может, сходим в новый ресторан, который недавно открылся?</div>
+        <div></div>
+        <div></div>
+        <div class="message msg-right">Отличная идея! Я слышал, там очень вкусные блюда. Давай договоримся о времени.</div>
+        <div class="person">
+            <img src="avatar_1.png" alt="">
+            <div class="name">
+                <h1>Jack Silverston</h1>
+                <p>2 hours ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

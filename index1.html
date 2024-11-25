@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin: 6px 0;
+        }
+        p {
+            font-size: 14px;
+            color: rgb(82, 82, 82);
+        }
+        img {
+            width: 100%;
+        }
+        #main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 14px;
+            gap: 14px;
+        }
+        .grid-section {
+            grid-template-rows: repeat(3, min-content);
+            display: grid;
+            gap: 14px;
+        }
+        .news-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .news-text {
+            background-color: rgb(245, 245, 245);
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-grid">
+        <div class="grid-section">
+            <div class="news-item">
+                <img src="350x150.png" alt="">
+                <div class="news-text">
+                    <h1>Заголовок новости</h1>
+                    <p>Это краткое описание новости. Здесь говорится о событии, которое произошло недавно, и добавлены интересные детали.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="350x220.png" alt="">
+                <div class="news-text">
+                    <p>Здесь представлено описание другой новости. Она посвящена новым достижениям или событиям.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="350x100.png" alt="">
+                <div class="news-text">
+                    <h1>Важное событие</h1>
+                    <p>Эта новость освещает ключевые аспекты текущих событий, включая мнения экспертов и реакции людей.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-section">
+            <div class="news-item">
+                <img src="350x100.png" alt="">
+                <div class="news-text">
+                    <p>Краткий обзор событий в мире науки и технологий, раскрывающий их влияние на повседневную жизнь.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="350x230.png" alt="">
+                <div class="news-text">
+                    <h1>Обзор рынка</h1>
+                    <p>Статья посвящена изменениям в экономике и анализу текущих тенденций.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="350x150.png" alt="">
+                <div class="news-text">
+                    <p>Рассказ о людях, которые преодолевают трудности и достигают успеха в своих областях.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-section">
+            <div class="news-item">
+                <img src="350x100.png" alt="">
+                <div class="news-text">
+                    <h1>Интересное исследование</h1>
+                    <p>Недавнее исследование показало неожиданные результаты, которые могут изменить наше понимание мира.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="350x350.png" alt="">
+                <div class="news-text">
+                    <h1>Культурные события</h1>
+                    <p>На этой неделе в культурной сфере произошло множество интересных событий, включая выставки и концерты.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="350x150.png" alt="">
+                <div class="news-text">
+                    <p>Краткое описание событий, которые привлекли внимание общественности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
